@@ -23,19 +23,19 @@ endif
 # Add inputs and outputs from these tool invocations to the build variables 
 
 # All Target
-all: ARM_embdd_test_8_Process
+all: ARM_embdd_test_10_SP
 
 # Tool invocations
-ARM_enbdd_test_8_Process: $(OBJS) $(USER_OBJS)
+ARM_embdd_test_10_SP: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: GCC C Linker'
-	gcc  -o "ARM_embdd_test_8_Process" $(OBJS) $(USER_OBJS) $(LIBS) -lpthread
+	gcc  -o "ARM_embdd_test_10_SP" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) $(EXECUTABLES)$(OBJS)$(C_DEPS) ARM_embdd_test_8_Process
+	-$(RM) $(EXECUTABLES)$(OBJS)$(C_DEPS) ARM_embdd_test_10_SP
 	-@echo ' '
 
 .PHONY: all clean dependents

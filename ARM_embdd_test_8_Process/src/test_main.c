@@ -12,9 +12,10 @@ int process_test1();
 int process_test2_exit_main(void);
 int process_test3_pipe(void);
 int process_test4_shm(void);
-int thread_test1_create(void);
+int thread_test1_create(void);//need to change Makefile
+int thread_test2_cancel(void);//need to change Makefile
 
 int main(void) {
-	thread_test1_create();
+	thread_test2_cancel();
 	return 0;
 }
